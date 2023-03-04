@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en" xmlns:th="http://www.thymeleaf.org">
+    <meta charset="UTF-8">
+    <title>Computer market</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link href="imgcss/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/css" th:href="@{/style/marketstyle.css}"/>
+</head>
+<body>
+<div id="layout">
+    <div id="title">
+        <div id="logo">
+            <a href="WelcomeClassMenu">
+                <div class="text">Computer</div>
+                <div class="text1">Store</div>
+            </a>
+        </div>
+        <div id="links">
+            <div id="linktext"><a href="" class="abt">About us</a>
+                <a href="" class="abt1">Services</a>
+                <a href="Catalog" class="abt1">Catalog</a>
+                <a href="" class="abt1">Partners</a>
+                <a href="" class="abt1">Contacts</a>
+                <div class="abt1"><a href="LoginServlet" class="abt2">LogIn</a>
+                    <!--<div class = "abt1"><a href="AddProductInCatalog" class="abt2">LogIn</a>-->
+                    <p class="abt2">/</p>
+                    <a href="RegistrationServlet" class="abt2">Reg</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="searchbg">
+        <div id="search">
+            <div class="searchtxt">Search Product</div>
+            <div id="textfield">
+                <form action="SearchProduct" method="post">
+                    <input type="text" name="nameProduct" placeholder="enter name product"/>
+                    <input type="submit"/>
+                </form>
+            </div>
+            <div id="bullet5"></div>
+        </div>
+        <div class="welcome">WELCOME ${name} ${surname} to our computer store!</div>
+        <a href="SendMessage" class="readtxtwel">Private office</a>
+    </div>
+</div>
+<div id="curve">
+    <div class="onsale"><h1>NEW ON SALE</h1></div>
+</div>
+
+<table align="center" bgcolor="#dcffed" border=0 width="800">
+    <tr>
+        <td colspan="2" align="center"><font size="6"></td>
+        <form>
+    <tr align="right" valign="bottom">
+        <td><font color="Black"><b>${nameprod}</b></font></td>
+        <td><font color="Black"><b>Laptop</b></font></td>
+
+    </tr>
+
+    <tr align="right" valign="bottom" width="600">
+        <td>
+            ${photo}
+            <!--     <img src="img/samsungs.jpeg" width="600" height="auto">-->
+        </td>
+        <td>
+            <img src="img/prosixteen.png" width="600" height="auto"></td>
+
+    </tr>
+
+    <tr align="left" valign="top">
+        <td>
+            Display. 6.1 inches. 2340 x 1080 pixels. 120Hz Refresh rate.
+            Camera. 50 MP (Triple camera) 10 MP front.
+            Hardware. Qualcomm Snapdragon 8 Gen 1. 8GB RAM.
+            Storage. 128GB, not expandable.
+            Battery. 3700 mAh.
+            OS. Android 12. One UI UI.
+        </td>
+        <td>
+            "Vivobook Pro 16X OLED brings you the speed and
+            accuracy you need to realize your vision,
+            with a 16-inch NanoEdge 4K OLED1 display,
+            11th Generation Intel® H Series CPU, and NVIDIA®
+            GeForce RTX™ 3050 graphics. The exclusive ASUS DialPad
+            gives you precise and intuitive control of your creative tools,
+            and the dual-fan cooling design lets you work in undisturbed peace.
+            Vivobook Pro 16X OLED unlocks the door to your creative future."
+        </td>
+
+    </tr>
+</table>
+
+<div class="content">
+    <div>CALL OUR CENTER !</div>
+    <div>1-800-123-45678</div>
+    <div>1-800-222-45678</div>
+</div>
+</div>
+</div>
+</body>
+</html>

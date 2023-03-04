@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog of market</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <!-- <link href="imgcss/stylesheet.css" rel="stylesheet" type="text/css" />-->
+    <link rel="stylesheet" type="text/css" href="/static/style/css" th:href="@{/style/catalogstyle.css}"/>
+</head>
+<div>
+
+    <div id="layout">
+        <div id="title">
+            <div id="logo">
+                <a href="WelcomeClassMenu">
+                    <div class="text">Computer</div>
+                    <div class="text1">Store</div>
+                </a>
+            </div>
+            <div id="links">
+                <div id="linktext"><a href="http://all-free-download.com/free-website-templates/" class="abt">About us</a>
+                    <a href="http://all-free-download.com/free-website-templates/" class="abt1">Services</a>
+                    <a href="Catalog" class="abt1">Catalog</a>
+                    <a href="" class="abt1">Partners</a>
+                    <a href="http://all-free-download.com/free-website-templates/" class="abt1">Contacts</a>
+                    <div class = "abt1"><a href="LoginServlet" class="abt2">LogIn</a>
+                        <p class = "abt2">/</p>
+                        <a href="RegistrationServlet" class="abt2">Reg</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="searchbg">
+            <form >
+                <div id="search">
+                    <div class="searchtxt">Search Product</div>
+                    <div id="textfield">
+                        <input type="text" name="textfield"/>
+                        <button type="submit" name="search">Search</button>
+                    </div>
+                    <div id="bullet5"></div>
+                </div>
+            </form>
+                <div class="welcome"> ${name} ${surname} you are in Catalog!</div>
+        </div>
+    </div>
+    <div id="curve">
+        <div class="onsale"><h1>ON SALE</h1></div>
+    </div>
+
+    <center>
+        <table border="0" align="center" width="50%" high="30px">
+            <tr align="center" bgcolor="#4169e1">
+                <th>id</th>
+                <th>nameprod</th>
+                <th>price</th>
+                <th>manufacturer</th>
+                <th>releaseDate</th>
+                <th>photo</th>
+            </tr>
+
+<!--            <c:forEach items="${group}" var="products">-->
+<!--                <tr align="center" bgcolor="#dcffed">-->
+<!--                    <td>${products.id}</td>-->
+<!--                    <td>${products.nameprod}</td>-->
+<!--                    <td>${products.price}</td>-->
+<!--                    <td>${products.manufacturer}</td>-->
+<!--                    <td>${products.releaseDate}</td>-->
+<!--                    <td>${products.photo}</td>-->
+<!--                </tr>-->
+<!--            </c:forEach>-->
+
+            </td>
+            </td>
+
+        </table>
+    </center>
+</div>
+
+<div class="content">
+    <div >CALL OUR CENTER !</div>
+    <div >1-800-123-45678</div>
+    <div >1-800-222-45678</div>
+</div>
+</div>
+</div>
+</body>
+</html>

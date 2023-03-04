@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Computer Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+
+        <div class="card-body text-center">
+            <form method="post" action="/addproduct" id="reg-form">
+                <h2><strong>Add</strong></h2><br>
+                <div class="form-floating mb-3">
+                    <input type="text" name="categoryId" class="form-control" id="floatingInput0" placeholder="Category">
+                    <label for="floatingInput1">Category</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="name" class="form-control" id="floatingInput1" placeholder="Name">
+                    <label for="floatingInput1">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="info" class="form-control" id="floatingInput2" placeholder="info">
+                    <label for="floatingInput2">Info</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="price" class="form-control" id="floatingInput3" placeholder="price">
+                    <label for="floatingInput3">Price</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="count" class="form-control" id="floatingInput4" placeholder="count">
+                    <label for="floatingInput4">Count</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="manufacturer" class="form-control" id="floatingInput5"
+                           placeholder="manufacturer">
+                    <label for="floatingInput5">Manufacturer</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="releaseDate" class="form-control" id="floatingInput6"
+                           placeholder="releaseDate">
+                    <label for="floatingInput6">Release Date</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="link" class="form-control" id="floatingInput7" placeholder="link">
+                    <label for="floatingInput7">Link</label>
+                </div>
+              <!--  <div class="form-floating mb-3">
+                    <input type="text" name="photo" class="form-control" id="floatingInput8" placeholder="photo">
+                    <label for="floatingInput8">Photo</label>
+                </div>-->
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-success">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+</div>
+</body>
+</html>
