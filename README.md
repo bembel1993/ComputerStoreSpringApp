@@ -2,7 +2,7 @@
 ____
 ### Used technologies
 #### Framework - Spring Boot
-#### API - DispatcherServlet, Thymeleaf
+#### REST API
 #### Server - Tomcat 9.0.62
 #### DB - MySQL
 #### Connect with DB - Spring DATA JPA
